@@ -1,4 +1,4 @@
-/* Código front */
+
 /*
 #ECCF26
 #F6E148 
@@ -7,202 +7,28 @@
 #969383 
 */
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-html{
+body{
     margin: 0;
     padding: 0;
 }
 
 header{
-    position: fixed;
     background-color: #ECCF26;
-    padding: 20px;
-    width: 100%;
-    height: 30px;
-}
-.left
-{
-        justify-content: center;
-    display:flex;
-}
-.left img{
-    width: 10%;
-
-}
-
-.sidebar{
     position: fixed;
-    width: 250px;
-    margin-top: 70px;
-    padding-top: 30px;
-    margin-bottom: 0;
-    right: 0;
-    background-color: black;
-    transition: 0.5s;
-    transition-property: right;
-    float: right;
-    height: 100%;
-}
-
-.sidebar .image{
-    width: 60%;
-    border-radius: 100px;
-}
-
-.sidebar h2{
-    color: white;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.sidebar a{
-    color: #fad928;
-    display: block;
     width: 100%;
-    line-height: 60px;
-    text-decoration: none;
-    padding-left: 40px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property: background;
+    height: 100px;
+    padding: 1px;
 }
 
-.sidebar a:hover{
-    color: #000;
-    background-color: #fad928;
-    padding-left: 40px;
+#logo_header{
+    border: 2px solid black;
+    float: left;
+    width: auto;
+    padding: 0;
+    margin: auto 0;
+    display: flex;
 }
 
-.sidebar ion-icon{
-    padding-right: 10px;
+#logo_header img{
+    width: 25%;
 }
-
-label #sidebar_btn{
-    z-index: 1;
-    color: #000;
-    font-size: 25px;
-    margin-top: 1px;
-    margin-right: 40px;
-    cursor: pointer;
-    float: right;
-}
-
-label #sidebar_btn:hover{
-    color: #FFFD68;
-}
-
-#check:checked ~ .sidebar{
-    right: -170px;
-}
-
-#check:checked ~ .sidebar .image{
-    transition: 0.5s;
-    display: none;
-}
-
-#check:checked ~ .sidebar h2{
-    transition: 0.5s;
-    display: none;
-}
-
-#check:checked ~ .sidebar a span{
-    transition: 0.5s;
-    display: none;
-}
-
-#check:checked ~ .sidebar a{
-    margin-top: 25px;
-    font-size: 20px;
-    margin-right: 170px;
-    margin-left: -10px;
-    width: 80px;
-    transition: 0.5s;
-}
-
-#check:checked ~ .sidebar a:hover{
-    margin-left: 0.1%;
-    align-items: center;
-    background-color: #fad928;
-    color: #000;
-}
-
-#check:checked ~ .content{
-    margin-right: 60px;
-}
-
-#check{
-    display: none;
-}
-
-
-.content{
-    /* background: url(./imagens/capa.jpg) no-repeat; */
-    background-size: cover;
-    /* background-image: linear-gradient(#32c2b9, #00686c); */
-    background-position: center;
-    background-color: white;
-    height: 1000px;
-    padding-top: 68px;
-    transition: 0.5s;
-    border: solid 2px red;
-    bottom: 0;
-}
-
-#capa_home{
-    width: 100%;
-
-    /* background-image: url("../imagens/capa.jpg"); */
-}
-
-#capa_home img{
-    width: 99%;
-}
-
-
-
-/* GERA ------------------------------------------------------------------------------------------------- */
-
-/* body{
-    margin: 0;
-    background-color: white;
-}
-
-.cabecalho{
-    background-color: #ECCF26;
-    width: 100%;
-    height: auto;
-}
-
-.icone_cabecalho {
-    width: 8%;
-    float: right;
-}
-
-.icone_cabecalho img{
-    padding: 0.5%;
-    width: 80%;
-    
-}
-
-.logotipo_cabecalho{
-    width: 35%;
-}
-.logotipo_cabecalho img{
-    width: 50%;
-    padding: 0.5%;
-}
-.carrinhos_img
-{
-    width: 100%;
-    height: 20%;
-}
-.carrinhos_img img
-{
-    width: 100%;
-    height: 100pt;
-} */
