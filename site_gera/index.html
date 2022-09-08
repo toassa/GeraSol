@@ -5,41 +5,38 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel = "shortcut icon" type = "imagem/x-icon" href = "img/icone_aba.png"/>
+        <script src="utils/js.js"></script>
         <meta charset="UTF-8">
         <title>GeraSol</title>
     </head>
-    <body onload="corzinha()">
-        <style>
-        </style>
+    <body onload="corzinha()">           
         <header>
             <div class="logo_header">
+                <a href ="index.html"><img src="img/logoGera.png"></a>
+            </div>
+            <a href="utils/contato.html" class="btn"><ion-icon name="mail-outline" id ="contact_button"></ion-icon></a>
+            <a href="utils/historia.html" class="btn"><ion-icon name="book-outline" id="history_button"></ion-icon></a>
+            <a href="utils/projetos.html" class="btn"><ion-icon name="hammer-outline" id="products_button"></ion-icon></a>
+            <a href="index.html" class="btn"><ion-icon name="home-outline" id="home_button"></ion-icon></a>
+        </header>
+        <section></section>
+         <section class="shadow_box"><h1>Lorem Ipsum</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+            </p>
+        </section>
+
+        <footer>
+            <div class="img_footer">
                 <img src="img/logoGera.png">
             </div>
-        
-        <a href="index.html" class="btn"><ion-icon name="mail-outline" id ="contact_button"></ion-icon></a>
-        <a href="index.html" class="btn"><ion-icon name="book-outline" id="history_button"></ion-icon></a>
-        <a href="index.html" class="btn"><ion-icon name="hammer-outline" id="products_button"></ion-icon></a>
-        <a href="index.html" class="btn"><ion-icon name="home-outline" id="home_button"></ion-icon</a>
-        </header>
-         <section></section>
-         <section><h1>Lorem Ipsum</h1>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </section>
-             <section></section>
-             <section><h1>Lorem Ipsum</h1>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
-                 <section></section>
-                 <section><h1>Lorem Ipsum</h1>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
-                     <script> 
-                        function corzinha(){ 
-                        var pagat = window.location.href;
-                        var index = "http://200.145.153.91/raissamartinelli/php/site_gera/index.html";
-                        if (index==pagat) 
-                        {
-                            document.getElementById("home_button").style.color="white";
-                        }
-                    }
-                     </script>    
+            <div class="conteudo_footer">
+                <a href="utils/contato.html"> <p>Contato: projeto.gerasol@gmail.com</p> </a>
+            </div>
+        </footer>
     </body>
 </html>
+
+<!-- <iframe src="../utils/cabecalho.html" title="cabecalho" frameBorder="0" 
+        width="100%" scrolling="no" allowfullscreen>
+    </iframe> -->
