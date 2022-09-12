@@ -72,7 +72,7 @@ section:nth-of-type(1){
 }
 
 .form{
-    margin: 70px 25%;
+    /* margin: 70px 25%; */
     padding: 15px 10%;
     /* border: 2px solid red; */
     height: fit-content;
@@ -86,18 +86,8 @@ section:nth-of-type(1){
     font-weight: bold;
 }
 
-.form_txt{
-    float: left;
-    /* border: 2px solid red; */
-    margin: 10px 0;
-}
-
-.form_txt p{
-    text-align: center;
-    margin: 20px 0;
-}
-
 .form_campos{
+    width: 100%;
     margin: 10px 0;
     float: right;
     /* border: 2px solid red; */
@@ -113,20 +103,19 @@ section:nth-of-type(1){
 }
 
 input[type=text], input[type=email]{
+    margin-left:35%;
     /* margin: 15px 0; */
     border: none;
-    border-bottom: 2px solid #fad928;
-    border-left: 2px solid #fad928;
     color: #000;
-    background-color: transparent;
-    padding-left: 2px;
+    width: 30%;
+    padding: 1% 0px;
+    background-color: rgb(235, 235, 235);
 }
 
 textarea{
+    margin-left:36%;
     /* margin: 15px 0; */
-    border: 2px solid #fad928;
-    color: #000;
-    background-color: transparent;
+    background-color: rgb(235, 235, 235);;
     padding-left: 2px;
 }
 
@@ -152,7 +141,7 @@ footer{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ECCF26;
+    background-color: #000;
     /* border: 2px solid red; */
 }
 
@@ -164,25 +153,34 @@ footer{
 }
 
 .img_footer img{
-    width: 100px;
+    width: 80px;
 }
 
 .conteudo_footer{
-        /* width: 100%; */
-        margin-left: 39%;
+    /* width: 100%; */
+    margin-left: 15px;
     color: #fff;
     padding: 0;
     padding-bottom: 10px;
     /* border: 2px solid red; */
 }
 
-a.conteudo_footer:link, a.conteudo_footer:visited, a.conteudo_footer:active{
+.conteudo_footer ion-icon{
+    font-size: 22px;
+}
+
+.conteudo_footer img{
+    float: right;
+    width: 100px;
+    margin-right: 20px;
+}
+
+a.link_footer:link, a.link_footer:visited, a.link_footer:active{
     font-size: 18px;
     padding: 10px;
     text-decoration: none;
-    color: #00686c;
+    color: #ECCF26;
     border-radius: 10px;
-    background-color: #fad928;
     transition: 0.2s;
 }
 
@@ -191,6 +189,10 @@ a.btn_form:hover{
     padding: 12px;
     background-color: #ff9915;
     color: #edecb3;
+}
+::selection {
+    background: #FFFD68;
+    color: #121212;
 }
 
 /* section:nth-of-type(1), section:nth-of-type(5), section:nth-of-type(3){

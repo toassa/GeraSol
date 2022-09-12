@@ -24,26 +24,30 @@
         <div class="form">
             <h1>Formulário para contato</h1>
             <form action="contato.php" method="post">
-                <div class="form_txt">
-                    <p>Para:</p>
-                    <p>Nome:</p>
-                    <p>E-mail:</p>
-                    <p>Título:</p>
-                    <p>Conteúdo</p>
-                </div>
                 <div class="form_campos">
                     <br>
                     <input type="text" size="30" placeholder="projeto.gerasol@gmail.com" readonly><br><br>
                     <input type="text" name="nome" maxlength="50" size="30" placeholder="Nome" required><br><br>
                     <input type="email" name="email" maxlength="50" size="30" placeholder="E-mail" required><br><br>
                     <input type="text" name="titulo" maxlength="25" size="30" placeholder="Título do e-mail" required><br><br>
-                    <textarea name="conteudo" cols="30" rows="10" placeholder="Conteúdo do e-mail"></textarea>
+                    <textarea name="conteudo" cols="41" rows="10" placeholder="Conteúdo do e-mail"></textarea>
                 </div><br>
                 <div class="form_btn">
-                    <input type="submit" value="ENVIAR">
-                    <input type="reset" value="LIMPAR">
+                    <input type="submit" style="margin-left:35%;" value="ENVIAR">
+                    <input type="reset" value="LIMPAR" style="margin-left:5%;">
                 </div>
             </form>
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div class="img_footer">
+                <a href="../index.html"><img src="../img/icone_gera.png"></a>
+            </div>
+            <div class="conteudo_footer">
+                <a href="https://www.instagram.com/projeto.gerasol/" class="link_footer" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="contato.html" class="link_footer"><ion-icon name="mail-open-outline"></ion-icon></a>
+                <img src="../img/logotipo.png">
+            </div>
+        </footer>
     </body>
 </html>
