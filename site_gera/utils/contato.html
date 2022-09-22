@@ -26,11 +26,11 @@
             <form action="contato.php" method="post">
                 <div class="form_campos">
                     <br>
-                    <input type="text" size="30" placeholder="projeto.gerasol@gmail.com" readonly><br><br>
+                    <input type="text" size="30" placeholder="projeto.gerasol@gmail.com" id="emailcontato" readonly><br><br>
                     <input type="text" name="nome" maxlength="50" size="30" placeholder="Nome" required><br><br>
                     <input type="email" name="email" maxlength="50" size="30" placeholder="E-mail" required><br><br>
                     <input type="text" name="titulo" maxlength="25" size="30" placeholder="Título do e-mail" required><br><br>
-                    <textarea name="conteudo" cols="41" rows="10" placeholder="Conteúdo do e-mail"></textarea>
+                    <textarea name="conteudo" cols="41" rows="10" placeholder="Conteúdo do e-mail" required></textarea>
                 </div><br>
                 <div class="form_btn">
                     <input type="submit" style="margin-left:35%;" value="ENVIAR">
@@ -38,8 +38,7 @@
                 </div>
             </form>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <footer>
+        <footer id="contatofot">
             <div class="img_footer">
                 <a href="../index.html"><img src="../img/icone_gera.png"></a>
             </div>
