@@ -30,14 +30,14 @@
                     <input type="text" name="nome" maxlength="50" size="30" placeholder="Nome" required><br><br>
                     <input type="email" name="email" maxlength="50" size="30" placeholder="E-mail" required><br><br>
                     <input type="text" name="titulo" maxlength="25" size="30" placeholder="Título do e-mail" required><br><br>
-                    <textarea name="conteudo" cols="41" rows="10" placeholder="Conteúdo do e-mail" required></textarea>
+                    <textarea name="conteudo" cols="41" rows="10" placeholder="Conteúdo do e-mail" style="font-family:arial;" required></textarea>
                 </div><br>
                 <div class="form_btn">
                     <input type="submit" style="margin-left:35%;" value="ENVIAR">
                     <input type="reset" value="LIMPAR" style="margin-left:5%;">
                 </div>
             </form>
-        </div>
+        </div><br><br><br>
         <footer id="contatofot">
             <div class="img_footer">
                 <a href="../index.html"><img src="../img/icone_gera.png"></a>
@@ -50,3 +50,49 @@
         </footer>
     </body>
 </html>
+
+
+<!-- 
+<?php
+                    
+if (!isset($_POST["eMail"])){
+    ?>
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    Seu nome: <input type="text" name="realname" /> <br />
+    Seu e-mail: <input type="text" name="eMail" /> <br />
+    Mensagem: <br /> <textarea name="texto"> </textarea> <br />
+    <input type="submit" value="Enviar" />
+    </form>
+
+<?php }else{
+    function checaDados($vet){
+        foreach($vet as $val){ 
+            if (preg_match("/(%0A|%0D|\n+|\r+)/i", $val) != 0){ echo "Tentativa de injeção de dados."; return 1; }
+        }
+        return 0;
+    }
+
+    //Const
+    define("TO", "contato@seudominio.com.br");
+    define("ASS", "assunto do form");
+//if (checaDados($_POST)){ exit(1); }
+    // send mail :
+    $_POST['message'] = "Mensagem de " . $_POST['realname'] . " " . $_POST['eMail'];
+    $_POST['message'] .= "\n\n" . $_POST['texto'];
+    $_POST['eMail'] = "From: " . $_POST['eMail'];
+    if ( mail(TO, ASS, $_POST['message'], $_POST['eMail']) ){
+        // display confirmation message if mail sent successfully
+//header("Location: obrigado.html");
+//Para utilizar a funcao header nao pode haver nenhum dado enviado antes do header
+//Redirecionamento por META tag:
+echo '<meta http-equiv="refresh" content="0;url=http://www.seudominio.com.br/obrigado.html" />';
+//Redirecionamento por JavaScript: 
+//echo " <script> location='http://www.seudominio.com.br/' </script> "; 
+}
+else{
+    // sending failed, display error message
+    echo "<p>Seu e-mail nao p&ocirc;de ser enviado.</p>";
+}
+}//else
+?>
+-->
