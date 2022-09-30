@@ -67,6 +67,7 @@ h1{
 .shadow_box{
     margin-top: 35px;
     box-shadow: 0px -5px 30px 60px white;
+    height: fit-content;
 }
 
 section:nth-of-type(1){
@@ -160,6 +161,7 @@ footer{
     bottom: 0;
     z-index: 15;
     bottom: 0;
+    /* margin-top: 100%; */
 }
 /* #contatofot{
 } */
@@ -233,7 +235,7 @@ a.btn_form:hover{
 }
 
 .quadrantes{
-    margin: 0px 20%;
+    margin: 0px 10%;
     padding: 0;
     /* border: 2px solid red; */
     height: fit-content;
@@ -251,19 +253,22 @@ a.btn_form:hover{
 .linha img{
     width: 50%;
     float: left;
+    height: 200px;
 }
 
 .linha_txt{
-    background-color: #ECCF26;
+    background-color: #000;
     width: 50%;
     word-wrap: break-word;
     float: right;
-    padding: 9% 2%;
+    padding: 20px 5px;
+    height: 200px;
+    text-align: center;
 }
 
 .linha_txt p{
     font-size: 16px;
-    color: #000;
+    color: #fff;
 }
 
 .linha_2{
@@ -276,57 +281,153 @@ a.btn_form:hover{
 .linha_2 img{
     width: 50%;
     float: right;
+    height: 200px;
 }
 
 .linha_txt_2{
-    background-color: #000;
+    background-color: #ECCF26;
     width: 50%;
     word-wrap: break-word;
     float: left;
-    padding: 9% 2%;
+    padding: 20px 5px;
+    height: 200px;
+    text-align: center;
 }
 
 .linha_txt_2 p{
     font-size: 16px;
-    color: #fff;
+    color: #000;
 }
 
-.linha_3{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.linha_3 img{
-    width: 50%;
-    float: left;
-}
-
-.linha_txt_3{
-    background-color: #ECCF26;
-    width: 50%;
-    word-wrap: break-word;
-    float: right;
-    padding: 9% 2%;
-}
-
-.linha_txt_3 p{
-    font-size: 16px;
-    color: #fff;
-}
-
-.historia{
+.sobre_nos{
     margin: 50px 10%;
     border-radius: 20px;
     padding: 2%;
     box-shadow: 5px 10px 20px darkgrey;
 }
 
+.sobre_nos p{
+    margin: 10px;
+    text-align: justify;
+    color: #000;
+    font-size: 16px;
+}
+
+.sobre_nos h1{
+    margin: 10px;
+    text-align: justify;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .content{
     margin: 0;
     padding: 50px 0px;
 }
+
+/* SLIDE DE IMAGENS ------------------------------ */
+
+.slider{ /*div que abraça o carrossel*/
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+    
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid pink;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+/* --------------------------------------------------------------------- */
 
 /* section:nth-of-type(1), section:nth-of-type(5), section:nth-of-type(3){
     background-image: url("http://200.145.153.91/raissamartinelli/php/site_gera/capa_carrinhos.png");
