@@ -1,3 +1,21 @@
+let count = 1;
+//document.getElementById("radio1").checked = true;
+
+
+setInterval( function(){
+    nextImage();
+}, 6000)
+
+function nextImage(){
+    
+    count++;
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
+
+}
+
 function corzinha(){ 
     var pagat = window.location.href;
     var index = "http://200.145.153.91/raissamartinelli/php/site_gera/index.html";
