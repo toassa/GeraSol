@@ -4,7 +4,7 @@ let count = 1;
 
 setInterval( function(){
     nextImage();
-}, 6000)
+}, 5000)
 
 function nextImage(){
     
@@ -18,10 +18,10 @@ function nextImage(){
 
 function corzinha(){ 
     var pagat = window.location.href;
-    var index = "http://200.145.153.91/raissamartinelli/php/site_gera/index.html";
-    var historia = "http://200.145.153.91/raissamartinelli/php/site_gera/utils/sobre_nos.html";
-    var projetos = "http://200.145.153.91/raissamartinelli/php/site_gera/utils/projetos.html";
-    var contato= "http://200.145.153.91/raissamartinelli/php/site_gera/utils/contato.html";
+    var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
+    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
+    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projetos.html";
+    var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
     if (index==pagat){
         document.getElementById("home_button").style.color="white";
     }
@@ -39,3 +39,14 @@ function corzinha(){
     }
 //https://codepen.io/laugusta/pen/ZBjzVW
 }
+
+/*function aparecerTexto() {
+  document.getElementById("div").innerHTML = "<ion-icon name='mail-outline' id ='contact_button'></ion-icon><br><h5>lalala<h5>";
+}
+function reset() {
+  document.getElementById("div").innerHTML = "<ion-icon name='mail-outline' id ='contact_button'></ion-icon>";
+}
+ 
+html---------------------------------
+<div clas="lalalal" onmouseover="aparecerTexto();" onmouseout="reset();" id="div">lalala</div>
+*/

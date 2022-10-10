@@ -38,7 +38,7 @@
 
 .slide img{
     width: 800px;
-
+    border-radius: 15px;
 }
 
 .manual-navigation{
