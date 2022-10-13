@@ -355,6 +355,14 @@ a.link_footer:hover{
 .h1_body{
     width: 100%;
     border: 2px solid red;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.h1_body p{
+    font-size: 18px;
+    color: #000;
+
 }
 
 /*.img1index{
