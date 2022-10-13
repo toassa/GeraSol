@@ -19,8 +19,8 @@ function nextImage(){
 function corzinha(){ 
     var pagat = window.location.href;
     var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
-    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
-    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projetos.html";
+    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projeto.html";
+    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/equipe.html";
     var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
     if (index==pagat){
         document.getElementById("home_button").style.color="white";
