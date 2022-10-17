@@ -19,7 +19,11 @@ function nextImage(){
 function corzinha(){ 
     var pagat = window.location.href;
     var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
+// <<<<<<< HEAD
     var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
+// =======
+    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projeto.html";
+// >>>>>>> 9b47dd4add0e70c6bb628c869282b8b3b27ae9ea
     var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/equipe.html";
     var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
     if (index==pagat){
