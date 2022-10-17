@@ -78,7 +78,7 @@ h1{
 }
 
 .shadow_box p{
-    font-size: 12px;
+    font-size: 16px;
     color: #000;
 }
 
@@ -178,11 +178,37 @@ footer{
 }
 /* #contatofot{
 } */
-
+.butawn{
+    transition:2s;
+}
+.butawn.estica{
+    display:flex;
+    justify-content:center;
+    transition:2s;
+    flex-direction: row-reverse;
+}
+.img_topo_feb{
+    width:100%;
+    display:none;
+}
+.img_topo_feb img{
+    transition: 0.5s;
+    width: 122px;
+    float: right;
+    margin-right: 1%;
+    margin-top: -4.5%;
+    /* transition:0.5s-;
+    width:10%;
+    float:right;
+    margin-top: -5%; */
+}
+.img_topo_feb.aparece{
+    display:block;
+}
 .img_footer{
     width: 100%;
-    align-items: center;
-    padding: 0 46%;
+    display:flex;
+    justify-content:center;
 }
 
 .img_footer img{
@@ -203,7 +229,7 @@ footer{
 
 .conteudo_footer img{
     float: right;
-    width: 100px;
+    width: 115px;
     margin-right: 20px;
 }
 
@@ -217,11 +243,10 @@ a.link_footer:link, a.link_footer:visited, a.link_footer:active{
 }
 
 a.link_footer:hover{
-    transition: 0.2s;
-    padding: 12px;
-    background-color: #ff9915;
-    color: #edecb3;
+    cursor: pointer;
+    color: #FFFD68;
 }
+
 ::selection {
     background: #969383;
     color: #121212;
@@ -273,7 +298,7 @@ a.link_footer:hover{
 }
 
 .linha_txt{
-    background-color: #000;
+    background-color: #ECCF26;
     width: 50%;
     word-wrap: break-word;
     float: right;
@@ -283,7 +308,7 @@ a.link_footer:hover{
 }
 
 .linha_txt p{
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -301,7 +326,7 @@ a.link_footer:hover{
 }
 
 .linha_txt_2{
-    background-color: #ECCF26;
+    background-color: #000;
     width: 50%;
     word-wrap: break-word;
     float: left;
@@ -311,8 +336,8 @@ a.link_footer:hover{
 }
 
 .linha_txt_2 p{
-    font-size: 12px;
-    color: #000;
+    font-size: 16px;
+    color: #fff;
 }
 
 .sobre_nos{
@@ -354,15 +379,68 @@ a.link_footer:hover{
 
 .h1_body{
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: left;
-    padding-left: 10%;
+    padding: 50px 0px 0px 10%;
 }
 
 .h1_body p{
     font-size: 18px;
     color: #000;
 
+}
+
+.topico_sn{
+    margin: 30px 10%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.topico_sn p{
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    margin: 5px 2%;
+}
+
+.divisao_sn{
+    width: 100%;
+    margin: 0;
+    padding: 0px 5%;
+    background-color: #ECCF26;
+}
+
+.divisao_sn h1{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+#cor_equipe{
+    background-color: #000;
+}
+
+#cor_equipe h1{
+    color: #ECCF26;
+}
+
+.desktop {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+@media(max-width: 1200px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        /* ou inline, inline-block */
+    }
 }
 
 /*.img1index{

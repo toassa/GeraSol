@@ -20,7 +20,7 @@ function corzinha(){
     var pagat = window.location.href;
     var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
     var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
-    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projetos.html";
+    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/equipe.html";
     var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
     if (index==pagat){
         document.getElementById("home_button").style.color="white";
@@ -39,7 +39,14 @@ function corzinha(){
     }
 //https://codepen.io/laugusta/pen/ZBjzVW
 }
-
+window.addEventListener('scroll', function(){
+    var menu = document.querySelector('.butawn');
+    menu.classList.toggle('estica', window.scrollY > 250);
+  })
+  window.addEventListener('scroll', function(){
+    var menu = document.querySelector('.img_topo_feb');
+    menu.classList.toggle('aparece', window.scrollY > 250);
+  })
 /*function aparecerTexto() {
   document.getElementById("div").innerHTML = "<ion-icon name='mail-outline' id ='contact_button'></ion-icon><br><h5>lalala<h5>";
 }
