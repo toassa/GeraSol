@@ -19,15 +19,14 @@ function nextImage(){
 function corzinha(){ 
     var pagat = window.location.href;
     var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
-// <<<<<<< HEAD
     var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
-// =======
-    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/projeto.html";
-// >>>>>>> 9b47dd4add0e70c6bb628c869282b8b3b27ae9ea
     var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/equipe.html";
     var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
     if (index==pagat){
-        document.getElementById("home_button").style.color="white";
+        document.getElementById("home_button").style.color="yellow";
+        document.getElementById("history_button").style.color="white";
+        document.getElementById("products_button").style.color="white";
+        document.getElementById("contact_button").style.color="white"; 
     }
     if (historia==pagat)
     {
@@ -45,11 +44,40 @@ function corzinha(){
 }
 window.addEventListener('scroll', function(){
     var menu = document.querySelector('.butawn');
-    menu.classList.toggle('estica', window.scrollY > 250);
+    var pagat = window.location.href;
+    var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
+    var historia = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/sobre_nos.html";
+    var projetos = "http://200.145.153.175/raissamartinelli/php/site_gera/utils/equipe.html";
+    var contato= "http://200.145.153.175/raissamartinelli/php/site_gera/utils/contato.html";
+        if (index==pagat){
+        if (window.scrollY>250)
+        {
+            document.getElementById("home_button").style.color="yellow";
+            document.getElementById("history_button").style.color="black";
+            document.getElementById("products_button").style.color="black";
+            document.getElementById("contact_button").style.color="black";
+        }
+        else{
+            document.getElementById("home_button").style.color="yellow";
+            document.getElementById("history_button").style.color="white";
+            document.getElementById("products_button").style.color="white";
+            document.getElementById("contact_button").style.color="white";
+        }
+        
+        menu.classList.toggle('estica', window.scrollY > 250);
+    } 
+    else
+    menu.classList.toggle('estica', window.scrollY > 50);
+    
   })
   window.addEventListener('scroll', function(){
     var menu = document.querySelector('.img_topo_feb');
-    menu.classList.toggle('aparece', window.scrollY > 250);
+    var pagat = window.location.href;
+    var index = "http://200.145.153.175/raissamartinelli/php/site_gera/index.html";
+    if (pagat==index)
+     menu.classList.toggle('aparece', window.scrollY > 250);
+    else
+    menu.classList.toggle('aparece', window.scrollY > 50);
   })
 /*function aparecerTexto() {
   document.getElementById("div").innerHTML = "<ion-icon name='mail-outline' id ='contact_button'></ion-icon><br><h5>lalala<h5>";
