@@ -67,7 +67,7 @@ header{
 
 section{
     width:100%;
-    height:400px;
+    height: 450px;
     text-align:center;
     padding:40px 4%;
     font-family: roboto;
@@ -77,6 +77,15 @@ section{
     background-repeat: no-repeat;
     background-attachment:fixed;
 }
+
+
+section:nth-of-type(1){
+    background-image: url("http://200.145.153.175/raissamartinelli/php/site_gera/capa_carrinhos.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
 h1{
     margin-bottom:20px;
     color: #000;
@@ -92,10 +101,6 @@ h1{
 .shadow_box p{
     font-size: 16px;
     color: #000;
-}
-
-section:nth-of-type(1){
-    background-image: url("http://200.145.153.175/raissamartinelli/php/site_gera/capa_carrinhos.png");
 }
 
 .form{
@@ -258,7 +263,7 @@ a.link_footer:link, a.link_footer:visited, a.link_footer:active{
 
 a.link_footer:hover{
     cursor: pointer;
-    color: #ECCF26;
+    color: #474747;
 }
 
 ::selection {
